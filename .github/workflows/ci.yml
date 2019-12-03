@@ -9,8 +9,11 @@ jobs:
 
     steps:
     
-    - uses: Bogdanp/setup-racket@v0.5
-      name: Setup Racket environment
+    - name: Setup Racket
+      run: | 
+        apt-get update
+        apt-get install -y racket
+        raco pkg install --auto 2tdp
     - name: Run racket files
       run: |
         racket aoc-day1.rkt
