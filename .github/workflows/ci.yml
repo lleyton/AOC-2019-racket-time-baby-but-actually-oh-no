@@ -11,9 +11,6 @@ jobs:
     
     - uses: Bogdanp/setup-racket@v0.5
       name: Setup Racket environment
-    - uses: actions/checkout@v1
-    - name: Install packages
-      run: raco pkg install --auto htdp-lib
     - name: Run racket files
       run: |
         racket aoc-day1.rkt
