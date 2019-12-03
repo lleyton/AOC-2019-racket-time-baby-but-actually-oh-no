@@ -11,8 +11,8 @@ jobs:
     
     - name: Setup Racket
       run: | 
-        apt-get update
-        apt-get install -y racket
+        sudo apt-get update
+        sudo apt-get install -y racket
         raco pkg install --auto 2tdp
     - name: Run racket files
       run: |
