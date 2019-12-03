@@ -41,6 +41,8 @@
 (define (all-fuel a)
   (apply + (map (lambda (a) (total-fuel (first a))) a)))
 
+(check-expect (all-fuel (list (list 14) (list 1969) (list 100756))) 51314)
+
 ; aoc-day1-1 : string -> num
 ; takes a file path, input, and returns the solution to day 1,
 ; problem 1.
