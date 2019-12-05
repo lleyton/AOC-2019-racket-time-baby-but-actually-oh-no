@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname aoc-day1) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname gray_day1) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/batch-io)
 
 ; module-fuel : number -> number
@@ -49,7 +49,7 @@
 (define (aoc-day1-1 input)
   (total-module-fuel (read-words-and-numbers/line input)))
 
-(aoc-day1-1 "aoc-day1.txt")
+(aoc-day1-1 "gray_day1.txt")
 
 ; aoc-day1-2 : string -> num
 ; takes a file path, input, and returns the solution to day 1,
@@ -57,4 +57,4 @@
 (define (aoc-day1-2 input)
   (all-fuel (read-words-and-numbers/line input)))
 
-(aoc-day1-2 "aoc-day1.txt")
+(aoc-day1-2 "gray_day1.txt")

@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname aoc-day2) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname gray_day2) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/batch-io)
 ; replace-element : list number any -> list
 ; replace element in a at postion b with c
@@ -61,5 +61,5 @@
 (define (aoc-day2-1 input)
   (interpret (replace-element (replace-element (map string->number (first (read-csv-file input))) 1 12) 2 2) 0))
 
-(aoc-day2-1 "aoc-day2.txt")
-(aoc-day2-2 "aoc-day2.txt" 19690720)
+(aoc-day2-1 "gray_day2.txt")
+(aoc-day2-2 "gray_day2.txt" 19690720)
