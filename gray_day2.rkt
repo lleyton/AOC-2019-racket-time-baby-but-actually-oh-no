@@ -59,7 +59,7 @@
 ; takes a file path, input, and returns the solution to day 2,
 ; problem 1.
 (define (aoc-day2-1 input)
-  (interpret (replace-element (replace-element (map string->number (first (read-csv-file input))) 1 12) 2 2) 0))
+  (first (interpret (replace-element (replace-element (map string->number (first (read-csv-file input))) 1 12) 2 2) 0)))
 
 (aoc-day2-1 "gray_day2.txt")
 (aoc-day2-2 "gray_day2.txt" 19690720)
